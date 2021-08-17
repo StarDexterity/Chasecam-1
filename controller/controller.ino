@@ -1,3 +1,4 @@
+#include <servo.h>
 // Left Joystick X, Y and Switch
 int LY = A2, LX = A3, LS = 15;
 int LY_Values, LX_Values;
@@ -83,7 +84,7 @@ void loop()
   {
     // Switch between Manual or Automatic Camera control
     if (digitalRead(TR) == HIGH)
-    {
+    { 
       automatic_control();
     }
     else
